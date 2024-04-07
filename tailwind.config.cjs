@@ -18,6 +18,10 @@ const config = {
 				900: 'var(--primary-900)',
 				950: 'var(--primary-950)'
 			}
+		},
+		fontFamily: {
+			heading: 'var(--font-heading), sans-serif',
+			body: 'var(--font-body), sans-serif'
 		}
 	},
 

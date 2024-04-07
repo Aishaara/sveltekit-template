@@ -1,4 +1,7 @@
-/* Write your global styles here, in PostCSS syntax */
+/*Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Imported Fonts */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,10 +9,10 @@
 @layer base {
 	:root {
 		--primary: #20295a;
-		--primary-50: #eceef8;
-		--primary-100: #d9ddf2;
-		--primary-200: #b4bbe4;
-		--primary-300: #8e99d7;
+		--primary-50: #f0f5fe;
+		--primary-100: #dee8fb;
+		--primary-200: #9cbef4;
+		--primary-300: #6d9ced;
 		--primary-400: #6877ca;
 		--primary-500: #4255bd;
 		--primary-600: #354497;
@@ -17,5 +20,20 @@
 		--primary-800: #1b224b;
 		--primary-900: #0d1126;
 		--primary-950: #070813;
+
+		--font-heading: 'Oswald';
+		--font-body: 'Roboto';
+	}
+	.flex-y {
+		@apply flex flex-col;
+	}
+	.flex-x {
+		@apply flex flex-row;
+	}
+}
+
+@layer base {
+	body {
+		@apply bg-primary-950 text-primary-50 font-body min-h-screen w-full;
 	}
 }
